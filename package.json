@@ -1,0 +1,19 @@
+{
+  "name": "sample-ts-worker",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "node_modules/.bin/wrangler deploy",
+    "dev": "node_modules/.bin/wrangler dev",
+    "start": "node_modules/.bin/wrangler dev",
+    "test": "node_modules/.bin/vitest",
+    "cf-typegen": "node_modules/.bin/wrangler types"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.4.5",
+    "@cloudflare/workers-types": "^4.20240614.0",
+    "typescript": "^5.4.5",
+    "vitest": "1.5.0",
+    "wrangler": "^3.60.3"
+  }
+}
