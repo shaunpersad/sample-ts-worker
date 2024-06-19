@@ -4,8 +4,8 @@ export default {
 	async fetch(request, env, ctx): Promise<Response> {
 		return new Response(welcome, {
 			headers: {
-				'content-type': 'text/html'
-			}
+				'content-type': 'text/html',
+			},
 		});
 	},
 } satisfies ExportedHandler<Env>;
